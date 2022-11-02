@@ -1,0 +1,42 @@
+{
+    /* 以下设置需要根据工程内容手动调整 *****************************************************/
+    /* keil-mdk程序完整路径 */
+    "uvPath": "E:/Keil_v5/UV4/UV4.exe",
+    /* keil工程文件 .uvprojx的完整路径 */
+    "uvprojxPath": "USER\\ThreadX.uvprojx",
+    /* keil工程编译输出的.axf文件 相对路径 */
+    "axfFilePath": "OBJ\\Template.axf",
+    /* 芯片设备描述文件 */
+    "svdFilePath": "E:\\Keil_v5\\Packs\\Keil\\STM32H7xx_DFP\\3.0.0\\CMSIS\\SVD\\STM32H743.svd",
+    /* 芯片设备名称 */
+    "DbgDeviceIdentifier": "STM32H743II",
+    /* ******************************************************************************* */
+    /* 以下设置根据本机软件安装位置调整一次即可 */
+    /* python3.7 执行路径 */
+    "python.pythonPath": "G:/Programs/Python/Python37/python.exe",
+    /* jlink调试服务可执行路径 */
+    "cortex-debug.JLinkGDBServerPath": "E:/SEGGER/JLink/JLinkGDBServerCL.exe",
+    /* gcc-arm编译器路径 */
+    "cortex-debug.armToolchainPath": "G:/GNU Tools ARM Embedded/8 2019-q3-update/bin",
+    /* keil-mdk 头文件路径 */
+    "KeilIncludeFile": "G:/Keil_v5/ARM/ARMCC/include",
+    /* st-link调试服务可执行文件 */
+    "cortex-debug.stutilPath": "G:/stlink-1.6.1-x86_64-w64-mingw32/bin/st-util.exe",
+    /* 以下为vscode工作区配置 */
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "OBJ/**": true,
+    },
+    "files.watcherExclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "OBJ/**": true,
+    },
+}

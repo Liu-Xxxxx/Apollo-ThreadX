@@ -1,0 +1,102 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "py",
+            "args": [
+                "-3",
+                ".vscode/build.py",
+                "-b",
+                "${config:uvprojxPath}"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": [
+                {
+                    "owner": "c",
+                    "fileLocation": [
+                        "relative",
+                        "${workspaceFolder}"
+                    ],
+                    "pattern": {
+                        "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*):\\s+(.*)$",
+                        "file": 1,
+                        "line": 2,
+                        "severity": 3,
+                        "code": 4,
+                        "message": 5
+                    }
+                }
+            ]
+        },
+        {
+            "label": "rebuild",
+            "type": "shell",
+            "command": "py",
+            "args": [
+                "-3",
+                ".vscode/build.py",
+                "-r",
+                "${config:uvprojxPath}"
+            ],
+            "group": "build",
+            "problemMatcher": [
+                {
+                    "owner": "c",
+                    "fileLocation": [
+                        "relative",
+                        "${workspaceFolder}/Project/MDK-ARM"
+                    ],
+                    "pattern": {
+                        "regexp": "^(.*)\\((\\d+)\\):\\s+(warning|error):\\s+(.*):\\s+(.*)$",
+                        "file": 1,
+                        "line": 2,
+                        "severity": 3,
+                        "code": 4,
+                        "message": 5
+                    }
+                }
+            ]
+        },
+        {
+            "label": "download",
+            "type": "shell",
+            "command": "py",
+            "args": [
+                "-3",
+                ".vscode/build.py",
+                "-f",
+                "${config:uvprojxPath}"
+            ],
+            "group": "test",
+            "problemMatcher": []
+        },
+        {
+            "label": "open in keil",
+            "type": "process",
+            "command": "${config:uvPath}",
+            "args": [
+                "${config:uvprojxPath}"
+            ],
+            "group": "test"
+        },
+        {
+            "label": "clear",
+            "type": "shell",
+            "command": "./keilkilll.bat",
+            "group": "test"
+        },
+        {
+            "label": "rtt",
+            "type": "shell",
+            "command": "G:/SEGGER/JLink/JLinkRTTClient.exe",
+            "group": "test"
+        }
+    ]
+}
