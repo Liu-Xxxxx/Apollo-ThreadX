@@ -22,6 +22,7 @@
                 "d:\\APOLLO_DEV\\ThreadX\\HARDWARE\\QSPI",
                 "d:\\APOLLO_DEV\\ThreadX\\HARDWARE\\W25QXX",
                 "d:\\APOLLO_DEV\\ThreadX\\HARDWARE\\TOUCH",
+                "d:\\APOLLO_DEV\\ThreadX\\HARDWARE\\RTT",
                 "d:\\APOLLO_DEV\\ThreadX\\threadx\\common\\inc",
                 "d:\\APOLLO_DEV\\ThreadX\\threadx\\ports\\cortex_m7\\ac5\\inc",
                 "E:\\Keil_v5\\ARM\\ARMCC\\include",

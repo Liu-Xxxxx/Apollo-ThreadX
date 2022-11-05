@@ -20,7 +20,9 @@ static void start_app(ULONG thread_input);
 int main(void)
 {
 	HAL_Init();						//初始化HAL库
+	Cache_Enable();
 	Stm32_Clock_Init(160, 5, 2, 4); //设置时钟,400Mhz
+	printf("kernel entry\n");
 	tx_kernel_enter();				/* 进入ThreadX内核 */
 
 	while (1)
