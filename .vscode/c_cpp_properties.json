@@ -29,8 +29,10 @@
                 "d:\\APOLLO_DEV\\ThreadX\\HALLIB\\STM32H7xx_HAL_Driver\\Src",
                 "d:\\APOLLO_DEV\\ThreadX",
                 "d:\\APOLLO_DEV\\ThreadX\\threadx\\ports\\cortex_m7\\ac5\\example_build",
-                "d:\\APOLLO_DEV\\ThreadX\\threadx\\ports\\cortex_m7\\ac5\\src",
-                "d:\\APOLLO_DEV\\ThreadX\\threadx\\common\\src"
+                "d:\\APOLLO_DEV\\ThreadX\\threadx\\ports\\cortex_m7\\ac5\\inc",
+                "d:\\APOLLO_DEV\\ThreadX\\threadx\\common\\inc",
+                "d:\\APOLLO_DEV\\ThreadX\\guix\\ports\\cortex_m7\\ac5\\inc",
+                "d:\\APOLLO_DEV\\ThreadX\\guix\\common\\inc"
             ],
             "defines": [
                 "USE_HAL_DRIVER",
@@ -38,6 +40,7 @@
                 "TX_ENABLE_FPU_SUPPORT",
                 "TX_ENABLE_STACK_CHECKING",
                 "TX_INCLUDE_USER_DEFINE_FILE",
+                "GX_INCLUDE_USER_DEFINE_FILE",
                 "__CC_ARM",
                 "__arm__",
                 "__align(x)=",
